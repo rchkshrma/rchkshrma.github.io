@@ -2,31 +2,12 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<!--     <link rel="stylesheet" href="reset.css" type="text/css">
-    <link rel="stylesheet" href="login.css" type="text/css"> -->
-    <script src="index.js" defer></script>
-    <title>Login</title>
+    <title>CSV to HTML List</title>
 </head>
 <body>
-        <main class="main">
-            <article>
-                <h1 id="Login">Add</h1>
-                <form id="Form" method="POST" action="login.php">
-                    <fieldset>
-                        <div>
-                            <input type="text" id="Username" name="Username"  placeholder="Username">
-                            <p id="usernameError" class="Error">Field is required!</p>
-                        </div>
-                        <div>
-                            <input type="password" id="Password" name="Password"  placeholder="Password">
-                            <p id="passwordError" class="Error">Field is required!</p>
-                        </div>
-                        <input id="Button" type="submit" name="submit" value="Login">
-                    </fieldset>
-                </form>
-            </article>
-        </main>
+    <h1>CSV to HTML List</h1>
+    <ul id="numberList"></ul>
+    <script src="script.js"></script>
 </body>
 </html>
