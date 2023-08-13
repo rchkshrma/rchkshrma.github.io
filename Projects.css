@@ -1,0 +1,118 @@
+.body{
+    min-height: 98vh;
+    background-image: url("bckg1.png");
+    display: grid;
+    grid-template-areas: 'header'
+    'main'
+    'footer';
+    grid-template-rows: 15vh 73vh 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1vh solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+.header{
+    width: 155vh;
+    grid-area: 'header';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2.75%;
+    margin: auto;
+    flex-flow: row wrap;
+    font-size: 120%;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    grid-area: 'main';
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 2.5vh;
+    color: black;
+    font-style: italic;
+    background-color: white;
+    margin: auto;
+    height: 113%;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    overflow: scroll;
+    width: 94vw;
+}
+#back{
+    padding-top: 1%;
+    padding-left: 7.5%;
+    color: black;
+    text-align: left;
+}
+#Projects{
+    font-size: 10vh;
+    padding-bottom: 2%;
+}
+#Projects span{
+    color: rgb(160	115	80	);
+}
+.main article{
+    width: 65%;
+    text-align: justify;
+    padding-top: 0%;
+    padding-left: 10%;
+}
+.outerList{
+    font-weight: bold;
+}
+.innerList{
+    padding-bottom: 2%;
+    margin-left: 2%;
+    list-style: none;
+    font-weight: normal;
+}
+.inArticleLinks{
+    color: rgb(160	115	80	);
+    text-decoration: underline;
+}
+.footer{
+    grid-area: 'footer';
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 950px){
+    .header, .footer{
+        width: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    .main{
+        justify-content: center;
+        gap: 5vh;
+    }
+    .main article{
+        width: auto;
+        text-align: justify;
+        padding-top: 0%;
+        margin-top: 8vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 80%;
+    }
+    #back{
+        padding-top: -20%;
+    }
+}

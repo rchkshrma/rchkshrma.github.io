@@ -1,0 +1,150 @@
+.body{
+    min-height: 98vh;
+    background-image: url("bckg1.png");
+    display: grid;
+    grid-template-areas: 'header'
+    'main'
+    'footer';
+    grid-template-rows: 15vh 73vh 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1vh solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#signup{
+    color: black;
+    font-size: 2vh;
+    font-style: normal;
+}
+#signup:hover{
+    text-decoration: underline;
+}
+.header{
+    width: 155vh;
+    grid-area: 'header';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2.75%;
+    margin: auto;
+    flex-flow: row wrap;
+    font-size: 120%;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    grid-area: 'main';
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 2.5vh;
+    color: black;
+    font-style: italic;
+    margin: 2.5%;
+    height: 113%;
+    margin-top: 1%;
+}
+#back{
+    padding-top: 1%;
+    padding-left: 7.5%;
+    margin-left: -11.25%;
+    color: white;
+    text-align: left;
+}
+#Login{
+    font-size: 10vh;
+    margin-top: -12.5%;
+    border: 0.3rem solid rgb(160	115	80	);
+    border-radius: 10%;
+    background-color: white;
+    padding-bottom: 2%;
+}
+#Login span{
+    color: rgb(160	115	80	);
+}
+.main article{
+    text-align: center;
+    padding-right: 10%;
+    padding-left: 10%;
+    font-size: 5vh;
+    border: 0.3rem solid rgb(160	115	80	);
+    border-radius: 10%;
+    margin-left: 20%;
+    margin-right: 20%;
+    height: 70%;
+    background-color: white;
+}
+#Form{
+    text-align: center;
+    /* padding-top: 17.5%; */
+    padding-top: 13%;
+}
+#Form fieldset div{
+    padding-bottom: 5%;
+}
+#Form fieldset div input{
+    width: 75%;
+    height: 4vh;
+    border: 0.01rem solid black;
+    font-size: 3vh;
+    padding: 1%;
+    font-family: 'Times New Roman', Times, serif;
+}
+.Error{
+    color: red;
+    display: none;
+    font-style: normal;
+    font-size: 2vh;
+}
+#Button{
+    width: 30%;
+    font-size: 3.5vh;
+    border: 0.1rem solid black;
+    background-color: lightgrey;
+    font-family: 'Dosis', sans-serif;
+}
+#Button:hover{
+    background-color: rgb(174, 171, 171);
+}
+.footer{
+    grid-area: 'footer';
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 1153px){
+    #back{
+        padding-left: 20%;
+    }
+}
+@media screen and (max-width: 950px){
+    .header, .footer{
+        width: 80vh;
+        margin-left: 0.5%;
+        margin-right: 5%;
+        font-size: 1rem;
+    }
+    #back{
+        padding-left: 20%;
+    }
+    .main article{
+        height: 75%;
+    }
+    #Button{
+        font-size: 2vh;
+    }
+}

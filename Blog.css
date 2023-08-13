@@ -1,0 +1,183 @@
+.body{
+    min-height: 98vh;
+    background-image: url("bckg1.png");
+    display: grid;
+    grid-template-areas: 'header'
+    'main'
+    'footer';
+    grid-template-rows: 15vh 73vh 10vh;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow-x: hidden;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border: 1vh solid white;
+}
+a{
+    color: white;
+    text-decoration: none;
+}
+#selectForm{
+    padding-bottom: 2%;
+}
+#submit{
+    width: 5%;
+    border: 0.1rem solid black;
+    background-color: white;
+}
+#submit:hover{
+    background-color: lightgray;
+}
+#monthSelect{
+    width: 50%;
+    border: 0.2rem ridge rgb(160	115	80	);
+}
+.header{
+    width: 155vh;
+    grid-area: 'header';
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-bottom: 2.75%;
+    margin: auto;
+    flex-flow: row wrap;
+    font-size: 120%;
+    font-family: 'Raleway', sans-serif;
+}
+.main{
+    grid-area: 'main';
+    display: flex;
+    justify-content: left;
+    flex-direction: column;
+    gap: 10vh;
+    font-size: 2.5vh;
+    color: black;
+    font-style: italic;
+    background-color: white;
+    margin: auto;
+    height: 113%;
+    margin-top: 1%;
+    margin-bottom: 2.5%;
+    overflow: scroll;
+    width: 94vw;
+}
+#linkFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+#back{
+    padding-top: 1%;
+    padding-left: 7.5%;
+    color: black;
+    text-align: left;
+}
+#login, #logout{
+    text-align: right;
+    padding-top: 1%;
+    padding-right: 7.5%;
+    color: black;
+}
+#plus{
+    font-size: 2vh;
+    font-weight: bolder;
+    font-style: normal;
+    padding-left: 0.4%;
+    padding-right: 0.4%;
+    border: 0.2vh solid black;
+    border-radius: 100%;
+    vertical-align: super;
+    background-color: rgba(50, 205, 50, 0.848);
+}
+.minus{
+    font-size: 2vh;
+    font-weight: bolder;
+    font-style: normal;
+    padding-left: 0.6%;
+    padding-right: 0.6%;
+    border: 0.2vh solid black;
+    border-radius: 100%;
+    vertical-align: super;
+    background-color: rgb(193, 9, 9);
+}
+#Blog{
+    font-size: 10vh;
+    padding-bottom: 2%;
+}
+#Blog span{
+    color: rgb(160	115	80	);
+}
+.main article{
+    width: 70%;
+    text-align: justify;
+    padding-left: 10%;
+    padding-bottom: 10%;
+}
+.blogHeading, .commName{
+    font-size: 3vh;
+    font-weight: bold;
+    padding-bottom: 1%;
+}
+.commName{
+    padding: 0%;
+    font-style: normal;
+}
+.blogContent, .comm{
+    border: 0.2rem ridge rgb(160	115	80	);
+    font-size: 2.5vh;
+    overflow: scroll;
+    height: 30vh;
+    width: 100%;
+    padding: 4%;
+    padding-top: 1.5%;
+}
+.comm{
+    height: 5vh;
+}
+.oneEntry{
+    padding-bottom: 5%;
+}
+.date{
+    text-align: right;
+    font-style: normal;
+    font-family: 'Raleway', sans-serif;
+    margin-right: -8%;
+}
+.footer{
+    grid-area: 'footer';
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 2%;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 100%;
+    font-family: 'Raleway', sans-serif;
+}
+@media screen and (max-width: 950px){
+    .header, .footer{
+        width: 80vh;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: 1rem;
+    }
+    .main{
+        justify-content: center;
+        gap: 5vh;
+    }
+    .main article{
+        width: auto;
+        text-align: justify;
+        padding-top: 0%;
+        margin-top: 8vh;
+        padding-left: 5%;
+        padding-right: 5%;
+        height: 80%;
+    }
+    #back{
+        padding-top: -20%;
+    }
+}

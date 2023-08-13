@@ -1,0 +1,11 @@
+html, body, div, span, h1, h2, h3, h4, h5, h6, p, blockquote,
+a, em, img, q,small, strike, strong, sub, sup,b, u, i, ol, ul, li,
+fieldset, form, label, legend,table, caption, tr, th, td,article, 
+aside, figure, figcaption, footer, header, hgroup, nav, section{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
