@@ -4,10 +4,10 @@ const fetch = require('node-fetch');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
-const GITHUB_TOKEN = 'YOUR_GITHUB_PERSONAL_ACCESS_TOKEN';
-const REPO_OWNER = 'YOUR_GITHUB_USERNAME';
-const REPO_NAME = 'YOUR_REPO_NAME';
-const FILE_PATH = 'path/to/numbers.csv'; // Update with your file path
+const GITHUB_TOKEN = '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';
+const REPO_OWNER = 'rchkshrma';
+const REPO_NAME = 'rchkshrma.github.io';
+const FILE_PATH = 'numbers.csv'; // Update with your file path
 
 app.use(express.json());
 
